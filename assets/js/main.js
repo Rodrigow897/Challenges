@@ -29,21 +29,22 @@ function challenge03() {
 
 // 04 - Crie um script que declare uma variável e verifique se o seu valor é uma string. Se for, exiba a mensagem "É uma string", caso contrário, exiba a mensagem "Não é uma string".
 function challenge04() {
-    var nome = 455
-    if(typeof nome === 'string') {
-        window.alert("É uma string")
+    var nome = window.prompt("Digite algo para verificar se 'e uma string: ")
+
+    if(typeof String(nome) === 'string' && !Number(nome)) {
+        window.alert("eh uma string!")
     } else {
-        window.alert("Não é uma string")
+        window.alert("Nao eh uma string")
     }
 }
 
 // 05 - Crie um script que declara uma variável e verifique se o seu valor é um booleano. Se for, exiba a mensagem "É um booleano", caso contrário, exiba a mensagem "Não é um booleano".
 function challenge05() {
-    var verf = true
-    if (typeof verf === 'boolean') {
-        window.alert("É booleano")
+    var verf = prompt("Digite para verificar booleano!")
+    if (verf === "true" || verf === "false" || verf == 0 || verf == 1) {
+        window.alert("Eh booleano!")
     } else {
-        window.alert("Não é booleano")
+        window.alert("não eh booleano!")
     }
 }
 
