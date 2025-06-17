@@ -6,7 +6,7 @@ function challenge01() {
 function challenge02() {
     var n1 = parseInt(window.prompt("Digite o primeiro número: "));
     if (isNaN(n1) || n1 === null) {
-        window.alert("Voc^não digitou um número!")
+        window.alert("Você não digitou um número!")
         return;
     }
     var n2 = parseInt(window.prompt("Digite o segundo número: "))
